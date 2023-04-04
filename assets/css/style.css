@@ -11,6 +11,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 
+/* Common */
 h1,
 h2,
 h3,
@@ -20,10 +21,77 @@ h6 {
     font-family: "Sora", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+.btn {
+    --height: 56px;
+
+    display: inline-block;
+    min-width: 130px;
+    height: var(--height);
+    line-height: var(--height);
+    border: 1px solid rgba(0, 9, 88, 0.7);
+    border-radius: 99px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #000958;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
 input,
 textarea,
 select,
 button {
     font-family: inherit;
     font-size: inherit;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    padding: 26px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.header__action-link,
+.navbar__link {
+    padding: 8px 18px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #5e6085;
+    transition: 0.25s;
+}
+
+.navbar__item:hover .navbar__link,
+.navbar__item-active .navbar__link,
+.header__action-link:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #000958;
+}
+
+.header__action-btn {
+    --height: 50px;
+
+    min-width: 118px;
 }
