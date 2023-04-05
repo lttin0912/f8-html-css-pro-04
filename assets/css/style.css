@@ -494,7 +494,7 @@ button {
 
 .tab__list {
     position: relative;
-    display: inline-flex;
+    display: flex;
     column-gap: 56px;
 }
 
