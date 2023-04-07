@@ -46,6 +46,7 @@ a {
     font-size: 1.4rem;
     text-align: center;
     color: #000958;
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -53,9 +54,9 @@ a {
 }
 
 .btn--primary {
-    color: #fff;
-    background: var(--primary-color);
-    border-color: var(--primary-color);
+    color: #fff !important;
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
 }
 
 .btn__icon {
@@ -812,3 +813,160 @@ button {
     color: var(--primary-color);
     border: 1px solid var(--primary-border-color);
 }
+
+/* Pricing */
+.pricing {
+    padding: 86px 0;
+    background-color: #fff6ed;
+}
+
+.pricing__heading,
+.pricing__desc {
+    text-align: center;
+}
+
+.pricing__desc {
+    margin: 24px auto 38px auto;
+    max-width: 709px;
+}
+
+.pricing__switch-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.pricing__switch-inner {
+    position: relative;
+}
+
+.pricing__switch-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 276px;
+    height: 56px;
+    padding: 0 40px;
+    border: 1px solid var(--primary-border-color);
+    border-radius: 31px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.pricing__switch-label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 100%;
+    margin: 0 auto;
+    background: var(--primary-color);
+    border-radius: inherit;
+}
+
+.pricing__switch-input {
+    display: none;
+}
+
+.pricing__switch-input:checked + .pricing__switch-label::before {
+    width: 131px;
+    left: unset;
+    right: 0;
+}
+
+.pricing__switch-input:checked + .pricing__switch-label .pricing__switch-value:nth-child(1),
+.pricing__switch-input:not(:checked) + .pricing__switch-label .pricing__switch-value:nth-child(2) {
+    color: var(--primary-color);
+}
+
+.pricing__switch-value {
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #fff;
+}
+
+.pricing__sale-off {
+    position: absolute;
+    top: -10px;
+    right: -110px;
+}
+
+.pricing__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
+    margin-top: 56px;
+}
+
+.pricing-item {
+    padding: 30px 28px 43px;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.pricing-item__type {
+    font-size: 1.2rem;
+    line-height: 1;
+    color: var(--primary-color);
+}
+
+.pricing-item__heading {
+    margin-top: 8px;
+    font-family: "Sora";
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: #3f4065;
+}
+
+.pricing-item__price {
+    margin-top: 24px;
+    font-family: "Sora";
+    font-weight: 700;
+    font-size: 3.3rem;
+    line-height: 1.03;
+    color: #000958;
+}
+
+.pricing-item__btn {
+    --height: 44px;
+
+    display: block;
+    min-width: 246px;
+    margin: 22px auto 24px;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-border-color);
+    background: transparent;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1;
+}
+
+.pricing-item__item {
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #656689;
+}
+
+.pricing-item__item {
+    margin-top: 18px;
+}
+
+.pricing-item__item::before {
+    content: url(../icons/check-primary.svg);
+    margin-right: 14px;
+}
+
+.pricing__container {
+    width: 994px;
+}
+
+/* Review */
+
+/* Blog */
+
+/* Footer */
