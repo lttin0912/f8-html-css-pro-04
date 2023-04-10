@@ -445,7 +445,7 @@
 						</article>
 
 						<!-- Pricing Item 2 -->
-						<article class="pricing-item">
+						<article class="pricing-item pricing-item--active">
 							<p class="pricing-item__type">Exclusive</p>
 							<h3 class="pricing-item__heading">2x care</h3>
 							<p class="pricing-item__price">$199</p>
@@ -485,9 +485,10 @@
 
 			<!-- Review -->
 			<section class="review">
-				<div class="container review__container">
+				<div class="container">
 					<div class="review__inner">
-						<div class="review__prev">
+						<!-- Review Prev -->
+						<button class="review__control">
 							<svg
 								width="20"
 								height="21"
@@ -510,23 +511,37 @@
 									stroke-linejoin="round"
 								/>
 							</svg>
-						</div>
-						<figure class="review__media">
-							<img src="./assets/img/review-01.png" alt="" class="review__media-img" />
-						</figure>
+						</button>
+						<!-- Review Content -->
 						<div class="review__content">
-							<h2 class="section-heading review__heading">Our Reviews</h2>
-							<p class="review__desc">
-								“It was very comforting to recieve a text and pics each day about our pets and how they
-								were doing. It was also nice that my pets were in the comfortable environment of their
-								own home and received playfull attention from our pet sitters as well. Thanks so much!”
-							</p>
-							<div class="review__bottom">
-								<img src="./assets/icons/line.png" alt="" />
-								<p class="review__name">Karla Deras</p>
+							<!-- Review List -->
+							<div class="review__list">
+								<article class="review-item">
+									<figure class="review-item__media">
+										<img src="./assets/img/review-01.png" alt="" class="review-item__img" />
+									</figure>
+									<section class="review-item__content">
+										<h2 class="section-heading review-item__heading">Our Reviews</h2>
+										<blockquote class="review-item__quote">
+											“It was very comforting to recieve a text and pics each day about our pets
+											and how they were doing. It was also nice that my pets were in the
+											comfortable environment of their own home and received playfull attention
+											from our pet sitters as well. Thanks so much!”
+										</blockquote>
+										<p class="review-item__author">Karla Deras</p>
+									</section>
+								</article>
+							</div>
+							<!-- Review dots -->
+							<div class="review__dots">
+								<span class="review__dot review__dot--active"></span>
+								<span class="review__dot"></span>
+								<span class="review__dot"></span>
+								<span class="review__dot"></span>
 							</div>
 						</div>
-						<div class="review__next">
+						<!-- Review Next -->
+						<button class="review__control">
 							<svg
 								width="20"
 								height="21"
@@ -549,13 +564,7 @@
 									stroke-linejoin="round"
 								/>
 							</svg>
-						</div>
-					</div>
-					<div class="review__control">
-						<span class="review__control-item review__control-item--active"></span>
-						<span class="review__control-item"></span>
-						<span class="review__control-item"></span>
-						<span class="review__control-item"></span>
+						</button>
 					</div>
 				</div>
 			</section>
